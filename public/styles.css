@@ -152,6 +152,7 @@
     }
 
     .subtitle-textSource1{
+        font-size: 1rem;
         color: white;
         position: absolute ;
         top: 20%;
@@ -159,6 +160,7 @@
         transform: translate(-50%, -50%);
     }
     .subtitle-textSource2{
+        font-size: 1rem;
         color: white;
         position: absolute ;
         top: 70%;

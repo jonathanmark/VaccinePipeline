@@ -40,6 +40,7 @@
 }
 
 .navbar-title{
+    color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -102,6 +103,10 @@
     transform: translate(-50%, -50%);
 }
 
+.pricing-column{
+    padding: 5% 10%;
+}
+
 .nopadding {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
@@ -121,19 +126,33 @@
 
  #overall-statistics{
     text-align: center;
+    padding-bottom: 2%;
 
  }
 
+ .white-color{
+     color: white;
+ }
+
+ .navbar-personalize{
+    background-color: #204051;
+ }
+
  @media (max-width: 1028px) {
+
+    .pricing-column{
+        padding: 2.5% 5%;
+    }
+
     .navbar-title{
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
 
     .above-text{
-        font-size: 1rem;
+        font-size: 1.2rem;
         color: white;
         position: absolute;
-        top: 75%;
+        top: 25%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -142,12 +161,17 @@
         font-size: 1rem;
         color: white;
         position: absolute ;
-        top: 35%;
+        top: 65%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
     .vaccine-developer-description{
         padding: 5%;
+        height:130px;
+        width:100%;
+    }
+
+    .title-image{
         height:130px;
     }
 
@@ -160,12 +184,16 @@
         transform: translate(-50%, -50%);
     }
     .subtitle-textSource2{
-        font-size: 1rem;
+        font-size: 0.8rem;
         color: white;
         position: absolute ;
         top: 70%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    #name-of-vaccine{
+        transform: translate(-0%, -1%);
     }
   }
  

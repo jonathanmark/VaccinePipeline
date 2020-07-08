@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Vaccine Pipeline</title>
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="public/styles.css">
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+   <script type="text/javascript">
+     google.charts.load('current', {
+       'packages':['geochart'],
+       // Note: you will need to get a mapsApiKey for your project.
+       // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+       'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+     });
+     google.charts.setOnLoadCallback(drawRegionsMap);
+
+     function drawRegionsMap() {
+       var data = google.visualization.arrayToDataTable([
+         ['Country', 'Vaccines Under Development', 'Phase 3'],
+         ['Germany', 2, 0],
+         ['United States', 3, 1],
+         ['Brazil', 4, 0],
+         ['Canada', 5, 0],
+         ['France', 6, 0],
+         ['Russia', 7, 0],
+         ['Philippines', 9, 0]
+       ]);
+
+       var options = {};
+
+       var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+       chart.draw(data, {legend:'none'});
+     }
+   </script>
+</head>
+<body>
+  <div class="white-section shadow" id="navigation-title">
+    <nav class="navbar navbar-expand-lg navbar-light bg-info navigation-main">
+      <a class="navbar-brand" href="#">
+        <h1 class="navbar-title"><i class="fas fa-syringe"></i> The Vaccine Pipeline</h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-lef" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link active" href="#">|Coronavirus Vaccine<span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#">|HIV Vaccine</a>
+          <a class="nav-item nav-link" href="#">|EBola Vaccine</a>
+          <a class="nav-item nav-link btn btn-primary " href="#">Help me with my Tuition</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="row" id="target-date">
+    <div class="container-fluid">
+      <div class=" nopadding">
+        <img class="title-image nopadding" src="public/images/person-getting-vaccinated-3985170.jpg"
+          alt="image of vaccine ready for use">
+        <h1 class="above-text2">A Coronavirus vaccine would be available in </h1>
+        <h1 class="date above-text">January 31, 2021</h1>
+      </div>
+    </div>
+  </div>
+  <div class="nopadding" id="vaccine-developer">
+    <div class="container-fluid nopadding">
+      <div class="row">
+        <div class="feature-box col-lg-6 vaccine-developer-description nopadding">
+          <img class="subtitle-image nopadding" src="public/images/oxford-5263871_1920.jpg" alt="">
+          <h3 class="feature-title subtitle-textSource1 nopadding">University of Oxford</h3>
+          <p class="subtitle-textSource2 nopadding">The earliest vaccine that would be developed would be from the
+            University of Oxford</p>
+        </div>
+        <div class="feature-box col-lg-6 vaccine-developer-description nopadding">
+          <img class="subtitle-image2 nopadding" src="public/images/person-holding-injection-3825529 (1).jpg" alt="">
+          <h3 class="feature-title subtitle-textSource1 nopadding">Name of vaccine </h3>
+          <p class="subtitle-textSource2 nopadding">The vaccine would be described here</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="white-section">
+    <div id="overall-statistics">
+      <div class="draft-landscape-title shadow">
+        <h1 class="text-overall-statistics">Covid-19 Candidate Vaccines Landscape</h1>
+      </div>
+      <div class="row">
+        <div class="pricing-column col-lg-3 col-md-6 small-side-padding">
+          <div class="card">
+            <div class="card-header">
+              <h3>Total Vaccines Under Development</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="price-text">Free</h2>
+              <button class="btn btn-lg btn-block btn-outline-dark" type="button">Sign Up</button>
+            </div>
+          </div>
+        </div>
+        <div class="pricing-column col-lg-3 col-md-6 small-side-padding">
+          <div class="card">
+            <div class="card-header">
+              <h3>Vaccines Under Phase 3 Development</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="price-text">Free</h2>
+              <button class="btn btn-lg btn-block btn-outline-dark" type="button">Sign Up</button>
+            </div>
+          </div>
+        </div>
+        <div class="pricing-column col-lg-3 col-md-6 small-side-padding">
+          <div class="card">
+            <div class="card-header">
+              <h3>Total Vaccines Under Clinical Trials</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="price-text">$49 / mo</h2>
+              <button class="btn btn-lg btn-block btn-dark" type="button">Sign Up</button>
+            </div>
+          </div>
+        </div>
+        <div class="pricing-column col-lg-3 small-side-padding">
+          <div class="card">
+            <div class="card-header">
+              <h3>Total Vaccines Under Pre-Clinical Trials</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="price-text">$99 / mo</h2>
+              <button class="btn btn-lg btn-block btn-dark" type="button">Sign Up</button>
+            </div>
+          </div>
+        </div>
+    </div>  
+  </section>
+  <div class="draft-landscape-title shadow">
+    <h1 class="text-overall-statistics">The Covid 19 Vaccine Map</h1>
+  </div>
+
+  <div class="nopadding" id="vaccine-developer">
+    <div class="container-fluid nopadding">
+      <div class="row">
+        <div class="feature-box col-lg-12 vaccine-developer-description nopadding">
+          <div class="inline-block" id="regions_div" style="width: 900px; height: 500px;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+</body>
+</html>

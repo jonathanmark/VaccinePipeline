@@ -125,12 +125,15 @@
  }
 
  @media (max-width: 1028px) {
+    .navbar-title{
+        font-size: 1.7rem;
+    }
 
     .above-text{
-        font-size: 2rem;
+        font-size: 1rem;
         color: white;
         position: absolute;
-        top: 55%;
+        top: 75%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -145,7 +148,22 @@
     }
     .vaccine-developer-description{
         padding: 5%;
-        height: 170px;
+        height:130px;
+    }
+
+    .subtitle-textSource1{
+        color: white;
+        position: absolute ;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .subtitle-textSource2{
+        color: white;
+        position: absolute ;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
   }
  
